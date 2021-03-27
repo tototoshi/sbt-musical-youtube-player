@@ -81,19 +81,7 @@ function main() {
 
     const embededUrl = `https://www.youtube.com/embed/${id}?autoplay=1&start=${start}`;
 
-    const electronPath = path.join(
-      // ${rootDir}/dist/main
-      __dirname,
-      // ${rootDir}/dist
-      "..",
-      // ${rootDir}
-      "..",
-      // ${rootDir}/node_modules
-      "node_modules",
-      // ${rootDir}/node_modules/electron
-      "electron"
-    );
-
+    const electronPath = path.dirname(require.resolve("electron"));
     const electronPathTxt = path.join(electronPath, "path.txt");
 
     const electronExecutablePath = path.join(

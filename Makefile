@@ -1,6 +1,7 @@
 .PHONY:\
 	all \
 	build \
+	dist \
 	clean \
 	fmt \
 	install \
@@ -17,6 +18,11 @@ build:
 	@npx tsc --project tsconfig.main.json
 	@npx webpack --config webpack.preload.config.js
 	@npx webpack --config webpack.renderer.config.js
+dist: clean
+	@NODE_ENV=production npx tsc --project tsconfig.main.json
+	@NODE_ENV=production npx webpack --config webpack.preload.config.js
+	@NODE_ENV=production npx webpack --config webpack.renderer.config.js
+	#npm publish --access public
 watch:
 	(npx tsc --project tsconfig.main.json -w &) &&\
 	(npx webpack --config webpack.preload.config.js -w &) &&\

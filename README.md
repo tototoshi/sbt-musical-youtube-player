@@ -1,8 +1,8 @@
-# typescript-electron-react-app-template
+# sbt-musical-youtube-player
 
-## How to run
+## How to Install
 
 ```console
-$ make build
-$ make run
+$ npm install -g @tototoshi/sbt-musical-youtube-player
+$ sbt-musical-youtube-player 'https://www.youtube.com/watch?v=oqzETk7oNRk'
 ```

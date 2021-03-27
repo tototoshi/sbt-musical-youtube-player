@@ -1,0 +1,58 @@
+{
+  "name": "@tototoshi/sbt-musical-youtube-player",
+  "version": "0.1.0",
+  "main": "dist/main/index.js",
+  "license": "Apache-2.0",
+  "bin": {
+    "sbt-musical-youtube-player": "bin/sbt-musical-youtube-player"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "dependencies": {
+    "@types/commander": "^2.12.2",
+    "commander": "^2.20.3",
+    "electron": "^12.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/electron": "^1.6.10",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.36",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-router-dom": "^5.1.7",
+    "apache2-license-checker": "^1.0.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.2.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "react-refresh": "^0.9.0",
+    "react-router-dom": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "description": "## How to run",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tototoshi/sbt-musical-youtube-player.git"
+  },
+  "author": "Toshiyuki Takahashi",
+  "bugs": {
+    "url": "https://github.com/tototoshi/sbt-musical-youtube-player/issues"
+  },
+  "homepage": "https://github.com/tototoshi/sbt-musical-youtube-player#readme"
+}

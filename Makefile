@@ -15,26 +15,17 @@ all: install fmt build run
 run:
 	./bin/sbt-musical-youtube-player
 build:
-	@npx tsc --project tsconfig.main.json
-	@npx webpack --config webpack.preload.config.js
-	@npx webpack --config webpack.renderer.config.js
+	./scripts/build
 dist: clean
-	@NODE_ENV=production npx tsc --project tsconfig.main.json
-	@NODE_ENV=production npx webpack --config webpack.preload.config.js
-	@NODE_ENV=production npx webpack --config webpack.renderer.config.js
-	#npm publish --access public
+	@NODE_ENV=production ./scripts/build
 watch:
-	(npx tsc --project tsconfig.main.json -w &) &&\
-	(npx webpack --config webpack.preload.config.js -w &) &&\
-	(npx webpack --config webpack.renderer.config.js -w &)
+	./scripts/watch
 fmt:
 	@npx prettier . --write
 install:
 	@npm install
-
 test:
 	@npx jest
-
 clean:
 	rm -rf dist/
 

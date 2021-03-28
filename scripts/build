@@ -1,0 +1,5 @@
+#!/bin/bash
+npx tsc --project tsconfig.main.json &
+npx webpack --config webpack.preload.config.js &
+npx webpack --config webpack.renderer.config.js &
+wait

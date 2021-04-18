@@ -25,7 +25,7 @@ fmt:
 install:
 	@npm install
 test:
-	@npx jest
+	@npx jest --passWithNoTests
 clean:
 	rm -rf dist/
 

@@ -25,7 +25,7 @@
     "@babel/preset-typescript": "^7.13.0",
     "@types/electron": "^1.6.10",
     "@types/jest": "^26.0.22",
-    "@types/node": "^14.14.36",
+    "@types/node": "^15.0.1",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "@types/react-router-dom": "^5.1.7",

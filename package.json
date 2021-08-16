@@ -24,7 +24,7 @@
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.13.0",
     "@types/electron": "^1.6.10",
-    "@types/jest": "^26.0.22",
+    "@types/jest": "^27.0.1",
     "@types/node": "^16.0.0",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",

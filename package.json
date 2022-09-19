@@ -14,7 +14,7 @@
   "dependencies": {
     "@types/commander": "^2.12.2",
     "commander": "^9.0.0",
-    "electron": "^19.0.1",
+    "electron": "^20.1.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
